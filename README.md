@@ -2,18 +2,20 @@
 
 Contains:
 
- * Ubuntu 16.04
- * Node.js
- * MongoDB 3.6
- * mtools
- * Express
+ * [Ubuntu] 16.04(https://www.ubuntu.com/download)
+ * [Node.js](https://nodejs.org/en/)
+ * [MongoDB 3.6](https://www.mongodb.com/mongodb-3.6)
+ * [mtools](https://github.com/rueckstiess/mtools)
+ * [Express](https://expressjs.com)
 
 Port 3000 is configured to forward to host computer.  Additional ports can be configured in the `Vagrantfile`
 
 ## Prerequisites
 
- * Vagrant
- * VirtualBox
+ * [Vagrant](http://vagrantup.com/)
+ * [VirtualBox](https://www.virtualbox.org/)
+
+ These are both available for all major platforms. (Windows, OS X, Linux)
 
 ### Starting
 
