@@ -36,16 +36,26 @@ function install_mongodb(){
 }
 
 function install_mongodb_mtools(){
-  sudo apt-get install -y python-dev python-setuptools python-dev gcc python-pip python-dev  
+  sudo apt-get install -y python-dev python-setuptools python-dev gcc python-pip python-dev
   sudo pip install mtools
 #python -m pip install mtools
   sudo pip install pymongo
+  sudo pip install python-dateutil --upgrade
+  sudo pip install pytz --upgrade
+  sudo pip install --upgrade psutil
 }
+
+function get_repo(){
+  cd /home/vagrant/
+  git clone https://github.com/scotch-io/node-todo.git
+}
+
 
 sethostname
 config
 install_mongodb
 install_nodejs
 install_mongodb_mtools
+get_repo
 
 echo DONE

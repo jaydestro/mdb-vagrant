@@ -7,8 +7,9 @@ Contains:
  * [MongoDB 3.6](https://www.mongodb.com/mongodb-3.6)
  * [mtools](https://github.com/rueckstiess/mtools)
  * [Express](https://expressjs.com)
+ * [Scotch.io "Node-Todo"](https://github.com/scotch-io/node-todo)
 
-Port 3000 is configured to forward to host computer.  Additional ports can be configured in the `Vagrantfile`
+Port 3000 and 8080 are configured to forward to host computer.  Additional ports can be configured in the `Vagrantfile`
 
 ## Prerequisites
 
@@ -38,6 +39,13 @@ First, `exit` from the shell you entered with `vagrant ssh` and then when return
 vagrant destroy
 ```
 
+### Scotch.io "Node-Todo"
+
+This simple ["todo"](https://github.com/scotch-io/node-todo) single page application has been cloned from git and allows you to begin learning ho to launch and modify as simple Node.js application.
+
+To begin working with this application, enter the `/home/vagrant/node-todo` directory.  There you can review the connection string in `config/database.js` for your database connection to MongoDB.  You can modify this connection to have this data read and written from a local MongoDB database installation or from a remote connection, such as [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
+
+
 ### Local access
 
-If you're working on a Node.js app with the port 3000, you'll be able to access the app via http://localhost:3000.  
+If you're working on a Node.js app with the port 3000 or 8080, you'll be able to access the app via http://localhost:3000 or http://localhost:8080.  
