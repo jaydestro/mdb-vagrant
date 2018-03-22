@@ -36,7 +36,7 @@ function install_mongodb(){
 }
 
 function install_mongodb_mtools(){
-  sudo apt-get install python-dev python-setuptools python-dev gcc python-pip python-dev  
+  sudo apt-get install -y python-dev python-setuptools python-dev gcc python-pip python-dev  
   sudo pip install mtools
 #python -m pip install mtools
   sudo pip install pymongo
