@@ -45,7 +45,7 @@ This simple ["todo"](https://github.com/scotch-io/node-todo) single page applica
 
 To begin working with this application, enter the `/home/vagrant/node-todo` directory.  There you can review the connection string in `config/database.js` for your database connection to MongoDB.  You can modify this connection to have this data read and written from a local MongoDB database installation or from a remote connection, such as [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
 
-(https://i.imgur.com/R0j1247l.png)
+![node-todo](https://i.imgur.com/R0j1247l.png)
 
 
 ### Local access
