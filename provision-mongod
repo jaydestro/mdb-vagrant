@@ -33,6 +33,8 @@ function install_mongodb(){
   sudo apt-get update
   sudo apt-get install -y mongodb-org
   sudo service mongod stop
+  sudo  mkdir -p /data/db
+  sudo chown -R vagrant:vagrant /data/db
 }
 
 function install_mongodb_mtools(){
@@ -48,6 +50,7 @@ function install_mongodb_mtools(){
 function get_repo(){
   cd /home/vagrant/
   git clone https://github.com/scotch-io/node-todo.git
+  sudo chown -R vagrant:vagrant /home/vagrant/node-todo
 }
 
 
